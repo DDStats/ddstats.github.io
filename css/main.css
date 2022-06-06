@@ -30,7 +30,8 @@ html {
 body {
     align-items: center;
     //*background-color: #1f1f1f;*//
-    bacground-image: url("https://cottagelife.com/wp-content/uploads/2018/01/Ice-rink.jpg")
+    background-image: url("https://cottagelife.com/wp-content/uploads/2018/01/Ice-rink.jpg");
+    background-size: 100%;
     color: #ddd;
     display: flex;
     height: 100%;
