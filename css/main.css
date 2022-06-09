@@ -247,5 +247,5 @@ li a:hover:not(.active) {
 }
 
 .active {
-  background-color: blue;
+  background-color: #48b1ff;
 }
