@@ -251,5 +251,5 @@ li a:hover:not(.active) {
 }
 
 .active {
-  background-color: #48b1ff;
+  background-color: purple;
 }
