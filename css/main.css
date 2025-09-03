@@ -254,5 +254,15 @@ li a:hover:not(.active) {
   background-color: #48b1ff; /* Edge and Flow blue */
 }
 
+ul li a i {
+  font-size: 18px;
+  color: white;
+}
+
+ul li a i:hover {
+  color: #48b1ff; /* Edge & Flow blue hover */
+}
+
+
 }
 
