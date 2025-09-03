@@ -251,5 +251,8 @@ li a:hover:not(.active) {
 }
 
 .active {
-  background-color: purple;
+  background-color: #48b1ff; /* Edge and Flow blue */
 }
+
+}
+
