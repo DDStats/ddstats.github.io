@@ -272,5 +272,24 @@ ul li a i:hover {
     height: 33vh;                 /* about 1/3 of the viewport height */
 }
 
-
+/* Firefox rendering fixes */
+.link-list-item {
+    align-items: center;
+    justify-content: center;
+    line-height: normal;
+    height: 2.25rem;
+    transform: translateZ(0);
 }
+
+.link-section {
+    box-sizing: border-box;
+}
+
+body {
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+}
+
+
+
+
