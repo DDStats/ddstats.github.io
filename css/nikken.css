@@ -1,0 +1,69 @@
+.nikken-hero { display: grid; grid-template-columns: 1.4fr 1fr; gap: 60px; align-items: center; padding-block: 68px 76px; }
+.nikken-hero > * { min-width: 0; }
+.nikken-hero h1 { font-size: clamp(50px, 5.8vw, 84px); line-height: 1.03; letter-spacing: -3px; }
+.nikken-intro { max-width: 470px; color: var(--muted); font-size: 17px; line-height: 1.75; margin: 26px 0 18px; }
+.nikken-hero .text-link { font-size: 13px; }
+.nikken-identity { text-align: center; }
+.nikken-identity img { display: block; width: min(100%, 330px); height: auto; margin-inline: auto; }
+.nikken-identity p { font-size: 12px; color: var(--muted); margin-top: 12px; }
+.nikken-identity p span { color: var(--text); }
+.mission { background: var(--panel); border-block: 1px solid var(--line); padding-block: 55px; }
+.mission-grid { display: grid; grid-template-columns: 1.15fr 1fr; gap: 100px; }
+.mission-statement blockquote { font-size: clamp(27px, 3vw, 39px); letter-spacing: -.9px; line-height: 1.25; margin: 0 0 23px; max-width: 510px; }
+.source, .source-link { font-size: 12px; line-height: 1.6; color: var(--muted); }
+.source a, .source-link { text-decoration: underline; text-underline-offset: 4px; }
+.source a:hover, .source-link:hover { color: var(--accent); }
+.principles { display: grid; gap: 21px; }
+.principles p { font-size: 14px; line-height: 1.7; color: #b6c1c5; margin: 8px 0 0; max-width: 450px; }
+.principles .source-link { justify-self: start; }
+.products { padding-block: 70px 60px; scroll-margin-top: 25px; }
+.products-heading { display: flex; justify-content: space-between; align-items: end; gap: 25px; margin-bottom: 32px; }
+.products-heading .eyebrow { margin-bottom: 15px; }
+.products-heading h2, .store-invitation h2 { font-size: clamp(29px, 3vw, 40px); }
+.products-heading > p { color: var(--muted); font-size: 13px; line-height: 1.7; margin: 0 0 4px; }
+.product-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 30px; }
+.product { display: flex; flex-direction: column; min-width: 0; }
+.product-image { background: #f5f5f2; position: relative; padding: 45px 24px 22px; aspect-ratio: 1; display: flex; align-items: center; justify-content: center; }
+.product-category { position: absolute; top: 18px; left: 20px; font-size: 10px; letter-spacing: 1.5px; color: #405054; }
+.product-image img { display: block; width: 100%; height: 100%; object-fit: contain; min-height: 0; }
+.product-copy { padding-top: 23px; }
+.product-copy h3 { font-size: 22px; font-weight: 400; letter-spacing: -.4px; margin: 0 0 13px; line-height: 1.25; }
+.product-copy p { color: var(--muted); font-size: 14px; line-height: 1.7; margin: 0 0 18px; }
+.product-copy .product-note { font-size: 11px; line-height: 1.6; }
+.product-links { margin-top: auto; padding-top: 8px; display: grid; gap: 15px; }
+.product-store { display: flex; justify-content: space-between; border-block: 1px solid var(--line); padding-block: 16px; font-size: 13px; color: var(--accent); }
+.product-store:hover { color: #a4f4fa; border-color: var(--accent); }
+.product-links .source-link { justify-self: start; }
+.availability { color: var(--muted); font-size: 12px; margin: 32px 0 0; }
+.store-invitation { background: var(--panel); border-block: 1px solid var(--line); padding-block: 50px; }
+.store-invitation > .shell { display: flex; align-items: center; justify-content: space-between; gap: 32px; }
+.store-invitation .eyebrow { margin-bottom: 14px; }
+.store-invitation .button { font-size: 13px; flex-shrink: 0; }
+@media (max-width: 1000px) {
+ .nikken-hero { gap: 30px; }
+ .mission-grid { gap: 50px; }
+ .product-grid { gap: 20px; }
+ .product-image { padding: 42px 16px 18px; }
+ .product-copy h3 { font-size: 19px; }
+}
+@media (max-width: 720px) {
+ .nikken-hero { grid-template-columns: 1fr; gap: 32px; padding-block: 45px 38px; }
+ .nikken-hero h1 { font-size: clamp(44px, 9vw, 64px); letter-spacing: -2px; }
+ .nikken-intro { font-size: 15px; margin-top: 22px; }
+ .nikken-identity img { width: 210px; }
+ .nikken-identity p { margin-top: 2px; }
+ .mission { padding-block: 36px; }
+ .mission-grid { grid-template-columns: 1fr; gap: 30px; }
+ .mission-statement .eyebrow { margin-bottom: 20px; }
+ .mission-statement .source { margin-bottom: 0; }
+ .principles { border-top: 1px solid var(--line); padding-top: 25px; }
+ .products { padding-block: 42px; }
+ .products-heading { display: block; }
+ .products-heading > p { margin-top: 18px; }
+ .product-grid { grid-template-columns: 1fr; gap: 40px; }
+ .product-image { aspect-ratio: 1.2; padding: 44px 30px 22px; }
+ .product-copy h3 { font-size: 23px; }
+ .product-links { padding-top: 0; }
+ .store-invitation { padding-block: 36px; }
+ .store-invitation > .shell { flex-direction: column; align-items: start; gap: 25px; }
+}
